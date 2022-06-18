@@ -1,131 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="#">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- My Css -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Animated On Scroll -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- Animate Css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <title>My Portofolio | Rifki Anashirul</title>
-</head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Rifki Anashirul">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
+    <!-- Bootstraps 5-->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow" style="background-color: royalblue;">
-        <div class="container">
-            <a class="navbar-brand" href="#">Rifki Anashirul</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse icon-bar" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">
-                            <i class="fa fa-home"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Me</a>
-                    </li>
-                </ul>
-            </div>
+    <!-- Header and Navbar Start-->
+    <header>
+        <div class="jumbotron">
+            <h1>Web Ini sedang dalam <b>Pengembangan</b></h1>
+            <h1>Kritik dan Saran</h1>
+            <h1>Akan saya terima, silakan isi form Contact dibawah</h1>
+            <br>
+            <br>
+            <h6>Terima Kasih Salam Hangat</h6>
+            <h3>Rifki Anashirul</h3>
+            <!-- <h1>RIFKI ANASHIRUL</h1>
+            <p>Junior Web Programming | Web Designer</p> -->
         </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">Beranda</a></li>
+            <li><a href="">Tentang</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
     </nav>
-    <!-- Akhir Navbar -->
-    <!-- CountDown -->
-    <!-- <div class="countdown text-center mt-5">
-        <p id="demo"></p>
-    </div> -->
-    <!-- Jumbotron -->
-    <!-- <section class="jumbotron text-center mt-5" id="home">
-        <img src="assets/images/rifki.JPG" alt="Rifki Anashirul" width="250" class="rounded-circle img-thumbnail img-fluid">
-        <h1 class="display-4 animate__heartBeat">Rifki Anashirul</h1>
-        <p class="lead">Student | Junior Web Programmer | 18 </p>
-        <p id="demo"></p>
-    </section> -->
-    <!-- Akhir Jumbotron -->
-    <!-- About -->
-    <!-- <section id="about">
-        <div class="container">
-            <div class="row text-center mb-md-4">
-                <div class="col">
-                    <h2>About Me</h2>
-                </div>
-            </div>
-            <div class="row justify-content-center fs-5 text-start">
-                <div class="col-md-4">
-                    <p>Hi, I'm Rifki Anashirul. I was born in Balikpapan, on 19 August 2003. I live in Balikpapan
-                        with
-                        my parents. </p>
-                </div>
-                <div class="col-md-4">
-                    <p>Currently studying at the State Vocational High School 1 Balikpapan. I majored in software
-                        engineering. </p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- Akhir About -->
-    <!-- skills -->
-    <!-- <section id="skills">
-        <div class="container">
-            <div class="row text-center mb-4">
-                <div class="col">
-                    <h2>Skills</h2>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img src="assets/images/html.jpg" class="card-img-top" alt="skills html">
-                        <div class="card-body">
-                            <p class="card-text text-center">HTML 5</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img src="assets/images/css3.jpg" class="card-img-top" alt="skills css">
-                        <div class="card-body">
-                            <p class="card-text text-center">CSS 3</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img src="assets/images/js.jpg" class="card-img-top" alt="skills js">
-                        <div class="card-body">
-                            <p class="card-text text-center">Java Script</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section> -->
-    <!-- Akhir skills -->
+    <!-- Header and Navbar End -->
 
     <!-- Contact -->
     <section id="contact">
-        <div class="container mb-3">
+        <div class="container mb-4">
             <div class="row text-center">
                 <div class="col">
                     <h2>Contact</h2>
@@ -139,16 +52,16 @@
                     </div>
                     <form name="ra-contact-form">
                         <div class="mb-3">
-                            <label for="name" class="form-label">Nama Lengkap</label>
-                            <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">
+                            <label for="name" class="form-label">Nama</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" placeholder="Your Name...">
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
+                            <input type="email" class="form-control" id="email" aria-describedby="email" name="email" placeholder="example@rifkinas.co">
                         </div>
                         <div class="mb-3">
                             <label for="pesan" class="form-label">Pesan</label>
-                            <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+                            <textarea class="form-control" id="pesan" rows="3" name="pesan" placeholder="Silakan isi pesan ini..."></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
                         <button class="btn btn-primary btn-loading d-none" type="button" disabled>
@@ -156,22 +69,16 @@
                             Loading...
                         </button>
                     </form>
-
                 </div>
             </div>
         </div>
     </section>
     <!-- Akhir Contact -->
-    <!-- Footer -->
-    <footer class="text-black-50 text-center" style="padding-top: 10rem;">
-        <p> Created by <a href="https://www.instagram.com/rifkinasss/" class="text-blue fw-bold">Rifki Anashirul</a></p>
-        <p> Balikpapan, 16 September 2021</p>
-    </footer>
-    <!-- Akhir Footer -->
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
+    <!-- Javascript -->
+    <!-- Js Bootstraps 5 -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script Contact -->
     <script>
         const scriptURL =
             'https://script.google.com/macros/s/AKfycbwlZHyjeDUYknro4Hudgv7Q6iRNwaatJrDZIJVYkvi4evSlkoW4wR81tkBncpBCopAoRg/exec'
@@ -203,44 +110,5 @@
                 .catch(error => console.error('Error!', error.message))
         })
     </script>
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Aug 19, 2022 00:00:01").getTime();
-        
-        // Update the count down every 1 second
-        var x = setInterval(function() {
-        
-          // Get today's date and time
-            var now = new Date().getTime();
-        
-          // Find the distance between now and the count down date
-            var distance = countDownDate - now;
-        
-          // Time calculations for days, hours, minutes and seconds
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-          // Display the result in the element with id="demo"
-            document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-        
-          // If the count down is finished, write some text
-            if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
-            }
-        }, 1000);
-        </script>
-        <script>
-            function myFunction() {
-                document.getElementById("demo", myScript);
-            }
-            </script> -->
 </body>
-
 </html>
