@@ -1,49 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500;1,600&display=swap');
-
 body {
     font-family: 'Raleway', sans-serif;
+    background-color: #F2FA5A;
 }
 
-header {
-    display: inline;
+.navbar {
+    background: transparent;
+    margin:10px 30px;
+}
+
+#navbarNav {
+    justify-content: end;
 }
 
 .jumbotron {
-    font-size: 20px;
-    padding: 230px;
-    background-color: #4D77FF;
-    text-align: center;
-    color: #F2FA5A;
+    margin: 200px 200px;
 }
 
-nav {
-    background-color: #56BBF1;
+.botbar {
+    background-color: #F2FA5A;
     padding: 10px;
-    position: sticky;
-    top: 0;
-    
+    text-align: center;
 }
 
-li {
-    display: inline;
-    list-style-type: none;
-    margin-right: 20px;
+#contact {
+    background-color: white;
+    padding: 100px;
 }
 
-a {
-    font-size: 20px;
-    font-weight: 400;
-    text-decoration: none;
-    color: #F2FA5A;
-}
-
-a:hover {
-    background-color: #4D77FF;
-    padding: 2.2%;
-    font-weight: bold;
-    color: #F2FA5A;
-}
-
-ul {
+footer {
+    padding: 10px;
+    background-color: #F2FA5A;
     text-align: center;
 }
