@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,64 +9,73 @@
     <title>My Portfolio | Rifki Anashirul</title>
 
     <!-- Bootstraps 5-->
-    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Header and Navbar Start-->
-    <nav class="navbar navbar-expand-lg navbar-primary">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
-                Rifki Anashirul
-            </a>
-            <button class="navbar-toggler visible" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="navbar-nav">
-                <a class="nav-link" href="#home">Home</a>
-                <a class="nav-link" href="#">About</a>
-                <a class="nav-link" href="#contact">Contact</a>
+    <section id="home">
+        <nav class="navbar navbar-expand-lg navbar-primary">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav">
+                        <ul>
+                            <li><a class="nav-link" href="#home">Home</a></li>
+                            <li><a class="nav-link" href="#about">About</a></li>
+                            <li><a class="nav-link" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-        </div>
         </nav>
+    </section>
     <!-- Header and Navbar End -->
-    <div>
-        <section id="home">
-            <div class="jumbotron text-start">
-                <img src="assets/images/rifki.JPG" alt="" width="200" height="250" class="rounded float-end img-thumbnail">
-                <h1 class="display-4">Rifki Anashirul</h1>
-                <p class="lead">Institue Teknologi Kalimantan <br> Sistem Informasi</p>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal">
-                    Selengkapnya
-                </button>
+    <section class="jumbotron text-center">
+        <img src="assets/images/user.png" alt="Rifki" width="200" class="rounded-circle img-thumbnail">
+        <h1 class="display-4">Rifki Anashirul</h1>
+        <p class="lead">Sistem Informasi 2022 | 10221044 | Student</p>
+    </section>
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <h2 class="text-center mb-5">About Me</h2>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <h4 class="text-center">Kisah Hidup</h4>
+                    <p align="justify">Saya adalah mahasiswa Sistem Informasi angkatan 2022.
+                        Saat ini saya sedang menempuh pendidikan di Institut Teknologi Kalimantan.
+                        Sejak dulu saya suka bermain game dan membuat aplikasi sederhana.
+                        Selain itu juga saya senang dengan teknologi.
+                        Karena saat ini semua perkembangan teknologi terus menerus.
+                    </p>
+                </div>
+                <div class="col">
+                    <h4 class="text-center">Hobi</h4>
+                    <ul>
+                        <li>Futsal</li>
+                        <li>Ngegame</li>
+                        <li>Tidur</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4 class="text-center">Skills</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
             </div>
-        </section>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-            <p></p>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-        </div>
-    </div>
-    </div>
+    </section>
+
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="contact">
         <div class="container mb-4">
             <div class="row text-center">
                 <div class="col">
@@ -81,15 +91,18 @@
                     <form name="ra-contact-form">
                         <div class="mb-3">
                             <label for="name" class="form-label">Nama</label>
-                            <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" placeholder="Your Name...">
+                            <input type="text" class="form-control" id="name" aria-describedby="name" name="nama"
+                                placeholder="Masukkan Nama Anda..." required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="email" name="email" placeholder="example@rifkinas.co">
+                            <input type="email" class="form-control" id="email" aria-describedby="email" name="email"
+                                placeholder="rifkinas@admin.com" required>
                         </div>
                         <div class="mb-3">
                             <label for="pesan" class="form-label">Pesan</label>
-                            <textarea class="form-control" id="pesan" rows="3" name="pesan" placeholder="Silakan isi pesan ini..."></textarea>
+                            <textarea class="form-control" id="pesan" rows="3" name="pesan"
+                                placeholder="Silakan isi pesan ini..." required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
                         <button class="btn btn-primary btn-loading d-none" type="button" disabled>
@@ -104,63 +117,66 @@
     <!-- Akhir Contact -->
     <!-- Bottom Navbar -->
     <div class="botbar">
-        <div class="row justify-content-center">
-            <div class="col-sm mt-5">
-                <q>The true measure of any society can be found in how it treats its most vulnerable members</q>
-                <p>- Mahatma Gandhi -</p>
-            </div>
-            <div class="col-sm">
-                <ul class="nav flex-column">
-                    <li>
-                        <a class="nav-link" href="https://www.instagram.com/rifkinasss/">
-                            <img src="assets/images/instagram.svg" alt="igkinas">
-                            Instagram
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="https://github.com/rifkianashirul19">
-                            <img src="assets/images/github.svg" alt="githubkinas">
-                            Github
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="https://wa.me/+6285163190805">
-                            <img src="assets/images/whatsapp.svg" alt="wakinas">
-                            WhatsApp
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="https://steamcommunity.com/id/Kinas1904/">
-                            <img src="assets/images/steam.svg" alt="steamkinas">
-                            Steam
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-sm">
-                <ul class="nav flex-column">
-                    <li>
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm mt-5">
+                    <q>The true measure of any society can be found in how it treats its most vulnerable members</q>
+                    <p>- Mahatma Gandhi -</p>
+                </div>
+                <div class="col-sm">
+                    <ul class="nav flex-column">
+                        <li>
+                            <a class="nav-link" href="https://www.instagram.com/rifkinasss/" target="_blank">
+                                <img src="assets/images/instagram.svg" alt="igkinas">
+                                Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="https://github.com/rifkianashirul19" target="_blank">
+                                <img src="assets/images/github.svg" alt="githubkinas">
+                                Github
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="https://wa.me/+6285163190805" target="_blank">
+                                <img src="assets/images/whatsapp.svg" alt="wakinas">
+                                WhatsApp
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="https://steamcommunity.com/id/Kinas1904/" target="_blank">
+                                <img src="assets/images/steam.svg" alt="steamkinas">
+                                Steam
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm">
+                    <ul class="nav flex-column">
+                        <li>
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
     <!-- Footer -->
-    <footer>
-        <hr class="my-4">
-        <div> 2022 &copy; Rifki Anashirul </div>
-    </footer>
+    <Footer>
+        <div>&copy;2022 | Rifki Anashirul</div>
+    </Footer>
     <!-- End Footer -->
     <!-- Javascript -->
     <!-- Js Bootstraps 5 -->
-    <script src="bootstrap/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="bootstrap/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
     <!-- Script Contact -->
     <script>
         const scriptURL =
@@ -176,9 +192,9 @@
             btnLoading.classList.toggle('d-none');
             btnKirim.classList.toggle('d-none');
             fetch(scriptURL, {
-                    method: 'POST',
-                    body: new FormData(form)
-                })
+                method: 'POST',
+                body: new FormData(form)
+            })
                 .then(response => {
                     //tampilkan tombol kirim, hilangkan tombol loading
                     btnLoading.classList.toggle('d-none');
@@ -192,14 +208,12 @@
                 .catch(error => console.error('Error!', error.message))
         })
     </script>
-    <!-- Modal Script -->
+    <!-- Button -->
     <script>
-        const myModal = document.getElementById('myModal')
-        const myInput = document.getElementById('myInput')
-
-    myModal.addEventListener('shown.bs.modal', () => {
-    myInput.focus()
-    })
+        document.querySelectorAll('.btn').forEach(buttonElement => {
+            const button = bootstrap.Button.getOrCreateInstance(buttonElement)
+            button.toggle()
+        })
     </script>
-</body>
+
 </html>

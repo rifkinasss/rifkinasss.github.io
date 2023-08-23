@@ -1,35 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500;1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap");
 body {
-    font-family: 'Raleway', sans-serif;
-    background-color: #F2FA5A;
+  font-family: "Bricolage Grotesque", sans-serif;
+  background: #82b74b;
+  padding: 0;
+  margin: 0;
 }
 
 .navbar {
-    background: transparent;
-    margin:10px 30px;
+  overflow: hidden;
+  background-color: rgb(39, 38, 38);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar ul {
+  list-style: none;
+  text-align: center;
+}
+.navbar ul li {
+  display: inline-block;
+}
+.navbar ul li a {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+.navbar ul li a,
+.navbar ul li a:after,
+.navbar ul li a:before {
+  transition: all 0.5s;
+}
+
+/* navbar */
+.navbar ul li a {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar ul li a:hover {
+  color: #000000;
+}
+
+.navbar ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: ".";
+  color: transparent;
+  background: #f1c40f;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+.navbar ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
 }
 
 #navbarNav {
-    justify-content: end;
+  justify-content: center;
 }
 
 .jumbotron {
-    margin: 200px 200px;
+  padding-top: 70px;
+  margin: 140px 200px;
+}
+
+#about {
+  background-color: #dedede;
+  padding: 200px;
 }
 
 .botbar {
-    background-color: #F2FA5A;
-    padding: 10px;
-    text-align: center;
+  text-align: center;
+  width: 100%;
+}
+
+.botbar ul li a {
+  display: block;
+  text-decoration: none;
+  color: black;
 }
 
 #contact {
-    background-color: white;
-    padding: 100px;
+  background-color: white;
+  padding: 100px;
 }
 
 footer {
-    padding: 10px;
-    background-color: #F2FA5A;
-    text-align: center;
+  padding: 10px;
+  background-color: #3e4444;
+  text-align: center;
+  color: aliceblue;
 }
